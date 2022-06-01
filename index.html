@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Project</title>
+    <style>
+        body {
+    padding-top: 100px;
+    background: url("https://images.unsplash.com/photo-1611406686532-0df7e54ea334?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80") no-repeat center center;
+    background-size: 1540px 1150px;
+}
+h1 {
+    color: rgb(237, 234, 234);
+    font-family:'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+#btn {
+    display: inline;
+    margin-top: 90px;
+    font-size: 20px;
+    margin: 10px 0 0 0;
+    font-family:'Times New Roman', Times, serif;
+    color: whitesmoke;
+    background-color:rgb(51, 153, 236);
+    border-style: none;
+    border-radius: 5px; 
+}
+
+#round {
+    width: 200px;
+    height: 30px;
+    border-style: none;
+    border-radius: 4px;
+    text-align:center;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+#main {
+    margin: auto;
+    width: 400px;
+    padding: 10px 20px 20px 20px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Live Weather</h1>
+        <form action="/" method="post">
+            <input id="round" type="text" name="cityName" placeholder="city name"  autofocus> <br/>
+            <span><button id = "btn" type="submit">Go</button></span>
+        </form>
+        
+    </div>
+</body>
+</html>
