@@ -3,7 +3,8 @@ const bodyParser = require('body-parser');
 const https = require('https');
 const app = express();
 const port = 8080;
-const apikey = "aba999847faa91b7dc3930d187bb061a";
+const config = require("/config.js");
+const apikey = config.APIKEY;
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.set('view engine', 'ejs');
